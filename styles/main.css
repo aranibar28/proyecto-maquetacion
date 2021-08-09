@@ -246,7 +246,7 @@ section > h2 {
   flex-wrap: wrap;
 }
 
-.item div {
+.services .item div {
   position: relative;
   margin: 10px;
   width: 308px;
@@ -306,18 +306,41 @@ section > h2 {
 .blog .item h2 {
   font-family: Poppins;
   font-size: 2.8rem;
-  border-left: solid 5px #5a0cb0;
+  border-left: solid 5px #c4c4c4;
   margin-left: 10px;
 }
 
-.blog .item article img:nth-child(1n) {
+.blog .item h3 {
+  font-family: Poppins;
+  font-size: 1.3rem;
+  border-left: solid 5px #c4c4c4;
+  margin-left: 10px;
+}
+
+.blog .item h3:first-child {
+  margin-top: 10px;
+}
+
+.blog .item .x1 {
   width: 300px;
   margin: 10px;
 }
 
-.blog .item article img:nth-child(2n) {
-  width: 154px;
-  margin: 207px;
+.blog .item .x2 {
+  width: 150px;
+  margin: 10px;
+}
+
+.blog .item .box p {
+  width: 150px;
+}
+
+.blog .item .box h3 {
+  margin-top: 10px;
+}
+
+.blog .item strong a{
+  color: #580aaf;
 }
 
 .blog input {
@@ -397,7 +420,7 @@ input:focus:invalid {
 }
 
 input:valid {
-  border: 1px solid green;
+  border: 1px solid #6d0ad3;
 }
 
 textarea:focus {
@@ -421,9 +444,9 @@ footer {
   padding: 20px;
 }
 
-footer h2{
+footer h2 {
   font-size: 2.8rem;
-  color: #00CF95;
+  color: #00cf95;
 }
 
 footer div ul {
@@ -458,7 +481,7 @@ footer div a:hover {
   }
 
   /* PORTFOLIO */
-  .portfolio > h2 {
+  section > h2 {
     text-align: center;
   }
 
