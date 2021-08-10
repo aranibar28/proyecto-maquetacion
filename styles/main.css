@@ -121,7 +121,7 @@ section > h2 {
   font-size: 1.3rem;
   font-weight: normal;
   border-left: solid 5px #00cf95;
-  margin-left: 10px;
+  margin: 10px;
   line-height: 18px;
 }
 
@@ -394,15 +394,8 @@ section > h2 {
 
 /* CONTACT */
 
-.contact {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.contact h2 {
-  position: relative;
-  right: 50px;
-  padding-bottom: 30px;
+.contact form {
+  padding: 25px 100px 25px 100px;
 }
 
 .contact div:last-child {
@@ -491,7 +484,6 @@ footer {
 }
 
 footer h2 {
-  margin-top: 35px;
   font-size: 2.8rem;
   color: #00cf95;
 }
@@ -507,7 +499,7 @@ footer .footer ul {
 }
 
 footer .footer li {
-  margin: 0 10px;
+  margin: 10px;
 }
 
 footer .footer a {
@@ -520,25 +512,38 @@ footer .footer a:hover {
   border-bottom: 3px solid #6d0ad3;
   text-decoration: none;
 }
-/* 
 
-}
- */
-footer div figure img {
-  float: left;
-}
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-family: Raleway;
 
-footer .social {
-  float: right;
+  align-items: center;
 }
 
-footer > div li {
-  margin: 10px;
+.social nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.social nav li {
+  margin: 0 10px;
+}
+
+.social nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social nav a:hover {
+  color: #6d0ad3;
+  text-decoration: none;
 }
 
 /* 
 RESPONSIVE DESIGN
 */
+
 @media (min-width: 0px) and (max-width: 860px) {
   /* ABOUT ME */
   .about div:first-child {
@@ -547,6 +552,13 @@ RESPONSIVE DESIGN
 
   .about div:last-child {
     display: none;
+  }
+
+  /* ARTICLE */
+
+  .blog article{
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   /* PORTFOLIO */
@@ -559,9 +571,6 @@ RESPONSIVE DESIGN
   }
 
   /* CONTACT */
-  .contact h2 {
-    right: 5px;
-  }
   .contact .row {
     flex-wrap: wrap;
   }
@@ -579,14 +588,21 @@ RESPONSIVE DESIGN
     margin-top: 0;
   }
 
-  footer > div figure img:first-child {
-    float: none;
+  footer .social{
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  footer .social {
-    float: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  
+  footer .social nav{
+    padding: 20px;
   }
+
+  footer figure{
+    width: 100%;
+  }
+
+
+
+
 }
